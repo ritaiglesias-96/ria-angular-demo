@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+/***************************** BREAKPOINTS *********************************/
+
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin media-mobile() {
+  @media (max-width: ($tablet)) {
+    @content;
+  }
+}
+
+@mixin media-tablet() {
+  @media (max-width: ($desktop)) and (min-width: ($tablet)) {
+    @content;
+  }
+}
+
+/***************************** TYPOGRAPHY *********************************/
+
+@mixin typography-h1() {
+  font-size: 48px;
+  font-weight: 700;
+  @include media-tablet() {
+    font-size: 32px;
+  }
+  @include media-mobile() {
+    font-size: 24px;
+  }
+}
+
+@mixin typography-h2() {
+  font-size: 32px;
+  font-weight: 600;
+  @include media-tablet() {
+    font-size: 24px;
+  }
+  @include media-mobile() {
+    font-size: 20px;
+  }
+}
+
+@mixin typography-h3() {
+  font-size: 24px;
+  font-weight: 700;
+  @include media-tablet() {
+    font-size: 20px;
+  }
+  @include media-mobile() {
+    font-size: 18px;
+  }
+}
+
+@mixin typography-p() {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  @include media-tablet() {
+    font-size: 14px;
+  }
+  @include media-mobile() {
+    font-size: 12px;
+  }
+}
+
+/************************** VARS ******************************/
+
+$darkGray: #353535;
+$dustyBlue: #3c6e71;
+$dustyBlueLight: #afd4d5;
+$white: #ffffff;
+$lightGray: #d9d9d9;
+$indigoBlue: #284b63;
+$black: #000000;
+
+/********************************************************/
+html,
+body {
+  height: 100%;
+}
+
+nav {
+  background-color: $lightGray;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: $darkGray;
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
