@@ -1,0 +1,18 @@
+@import "./src/styles.scss";
+
+button {
+  display: flex;
+  padding: 12px;
+  @include typography-p;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+button:hover {
+  color: $white;
+  background-color: $dustyBlue;
+  border-color: $dustyBlue;
+  box-shadow: none;
+}
