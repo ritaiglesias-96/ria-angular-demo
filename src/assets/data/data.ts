@@ -13,12 +13,12 @@ export const presentation = {
       {
         link: '/nodejs',
         text: 'NodeJS',
-        theme: 'outline',
+        theme: 'dark',
       },
       {
         link: '/cli',
         text: 'CLI',
-        theme: 'outline',
+        theme: 'light',
       },
       {
         link: '/scss',
