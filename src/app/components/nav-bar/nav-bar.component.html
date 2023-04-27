@@ -1,0 +1,13 @@
+<nav ngClass="navigation">
+  <a
+    [routerLink]="['/']"
+    routerLinkActive="router-link-active"
+    ngClass="appIcon"
+  >
+    <img src="../../../favicon.ico" />
+    <p>{{ titulo }}</p>
+  </a>
+  <div class="menu">
+    <app-button *ngFor="let boton of botones" [props]="boton"></app-button>
+  </div>
+</nav>

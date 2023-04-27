@@ -27,4 +27,22 @@ export const presentation = {
       },
     ] as Button[],
   },
+  typescript: {
+    titulo: 'Typescript',
+    secciones: [
+      {
+        subtitulo: 'Introduccion a TS',
+        texto: 'sdaj;lksjdlkajsl',
+      },
+      {
+        subtitulo: 'Introduccion a TS',
+        texto: 'sdaj;lksjdlkajsl',
+        herramientas: ['sdksaj', 'jashdkjaks', 'ashdjkhak'],
+      },
+      {
+        subtitulo: 'Introduccion a TS',
+        texto: 'sdaj;lksjdlkajsl',
+      },
+    ],
+  },
 };
