@@ -7,5 +7,6 @@ import { presentation } from '../assets/data/data';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  nav = presentation.nav;
+  presentacion = presentation;
+
 }

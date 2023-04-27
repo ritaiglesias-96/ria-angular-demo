@@ -1,7 +1,12 @@
 <app-nav-bar-component
-  [titulo]="nav.title"
-  [botones]="nav.buttons"
+  [titulo]="presentacion.nav.title"
+  [botones]="presentacion.nav.buttons"
 ></app-nav-bar-component>
+<app-typescript-component
+  [titulo]="presentacion.typescript.Titulo"
+></app-typescript-component>
+
+
 
 <div class="content" role="main">
   <!-- Highlight Card -->
@@ -468,3 +473,9 @@
 </div>
 
 <router-outlet></router-outlet>
+
+
+
+
+
+
