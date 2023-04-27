@@ -5,12 +5,9 @@
     ngClass="appIcon"
   >
     <img src="../../../favicon.ico" />
-    <p>Angular Demo</p>
+    <p>{{ titulo }}</p>
   </a>
   <div class="menu">
-    <app-button-component
-      *ngFor="let boton of botones"
-      [props]="boton"
-    ></app-button-component>
+    <app-button *ngFor="let boton of botones" [props]="boton"></app-button>
   </div>
 </nav>
