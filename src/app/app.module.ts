@@ -5,10 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { TypescriptComponentComponent } from './components/typescript-component/typescript-component.component';
+import { TypescriptComponent } from './pages/typescript/typescript.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonComponent, NavBarComponent,TypescriptComponentComponent],
+  declarations: [AppComponent, ButtonComponent, NavBarComponent,TypescriptComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

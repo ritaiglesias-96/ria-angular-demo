@@ -4,12 +4,3 @@ export interface Button {
   theme: 'dark' | 'light' | 'outline'
 }
 
-
-export interface TypeScript{
-  titulo: string,
-  subtitulo1: string,
-  subtitulo2: string,
-  subtitulo3: string,
-  herramienta: string[],
-  texto: string,
-}
