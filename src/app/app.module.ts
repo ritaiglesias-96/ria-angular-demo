@@ -6,9 +6,15 @@ import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { CliComponent } from './pages/cli/cli.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonComponent, NavBarComponent, CliComponent],
+  declarations: [
+    AppComponent,
+    ButtonComponent,
+    NavBarComponent,
+    HomePageComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

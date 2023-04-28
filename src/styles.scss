@@ -51,10 +51,21 @@ $desktop: 1024px;
   }
 }
 
-@mixin typography-p() {
+@mixin typography-h4() {
   font-size: 18px;
+  font-weight: 800;
+  @include media-tablet() {
+    font-size: 16px;
+  }
+  @include media-mobile() {
+    font-size: 14px;
+  }
+}
+
+@mixin typography-p() {
+  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.01em;
   @include media-tablet() {
     font-size: 14px;
   }
@@ -65,12 +76,17 @@ $desktop: 1024px;
 
 /************************** VARS ******************************/
 
-$darkGray: #353535;
-$dustyBlue: #3c6e71;
-$dustyBlueLight: #afd4d5;
+$red: #e01522;
+$redish: #f08a91;
+$purplish: #b4747f;
+$pink: #f8c5c8;
 $white: #ffffff;
-$lightGray: #d9d9d9;
-$indigoBlue: #284b63;
+$skyblue1: #cdeae5;
+$skyblue3: #8098a4;
+$dustyWhite: #6fb9e4ea;
+$blue1: #438bb8b0;
+$blue2: #336683;
+$blue3: #003049;
 $black: #000000;
 $dustyWhite: #6fb9e4ea;
 $blue1: #438bb8b0;
@@ -81,16 +97,16 @@ $blue3: #003049;
 html,
 body {
   height: 100%;
+  cursor: url("./favicon.ico"), auto;
 }
 
 nav {
-  background-color: $lightGray;
+  background-color: $blue3;
 }
 
 body {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
-  color: $darkGray;
   box-sizing: border-box;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -104,10 +120,22 @@ h4,
 h5,
 h6 {
   margin: 8px 0;
+  color: $white;
 }
 
-p {
+p,
+a {
   margin: 0;
+  color: $white;
+  cursor: url("./favicon.ico"), auto;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: url("./favicon.ico"), auto;
 }
 
 .spacer {
