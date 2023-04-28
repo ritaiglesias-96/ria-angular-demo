@@ -45,4 +45,24 @@ export const presentation = {
       },
     ],
   },
+  cli: {
+    titulo: 'CLI',
+    secciones: [
+      {
+        cardTitle: 'Linea de comandos',
+        texto:
+          'Permite crear proyectos en los que el CLI podrá añadir archivos y entidades Angular. Será posible añadir módulos, componentes, servicios o directivas en una línea de comandos.',
+      },
+      {
+        cardTitle: 'No se que poner',
+        texto:
+          'Nos ahorrará escribir mucho código y nos permitirá partir de un esquema de aplicación avanzado y capaz de facilitar los flujos de desarrollo.',
+      },
+      {
+        cardTitle: 'Herramientas',
+        texto:
+          'Además tiene una serie de herramientas ya configuradas y listas para hacer tareas como, depuración, testing o deploy.',
+      },
+    ],
+  },
 };
