@@ -9,3 +9,4 @@ import { Component } from '@angular/core';
 export class CliComponent {
   data = presentation.cli;
 }
+console.log(presentation);

@@ -1,11 +1,9 @@
-<div class="test">
-  <h1>{{data.titulo}}</h1>
-  <div class="card-container">
-    <div class="card" *ngFor="let seccion of data.secciones">
-      <h2>{{seccion.cardTitle}}</h2>
-      <p>
-        {{seccion.texto}}
-      </p>
-    </div>
+<h1>{{data.titulo}}</h1>
+<div class="card-container">
+  <div class="card" *ngFor="let seccion of data.secciones">
+    <h2>{{seccion.cardTitle}}</h2>
+    <p>
+      {{seccion.texto}}
+    </p>
   </div>
 </div>

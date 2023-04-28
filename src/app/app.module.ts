@@ -14,6 +14,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     ButtonComponent,
     NavBarComponent,
     HomePageComponent,
+    CliComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

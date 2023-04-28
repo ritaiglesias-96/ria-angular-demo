@@ -11,10 +11,12 @@ h1 {
 h2 {
   @include typography-h2;
   margin: 0 auto 0 auto;
+  color: $black;
 }
 
 p {
   @include typography-p;
+  color: $black;
 }
 
 .card-container {
@@ -28,10 +30,6 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.test {
-  background: linear-gradient(118.65deg, $blue2 5.88%, $blue3 98.75%);
-  height: 100%;
-}
 .card {
   display: flex;
   flex-direction: column;
