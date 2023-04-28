@@ -10,10 +10,15 @@
   .appIcon {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
     padding: 30px;
     text-decoration: none;
-    color: $indigoBlue;
+    color: $black;
+
+    img {
+      height: fit-content;
+    }
 
     @include media-tablet() {
       padding: 20px;
@@ -24,7 +29,12 @@
     }
 
     p {
-      @include typography-h3;
+      @include typography-h2;
+    }
+  }
+  .appIcon:hover {
+    p {
+      text-decoration: underline;
     }
   }
 
