@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { CliComponent } from './pages/cli/cli.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
@@ -13,6 +14,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     ButtonComponent,
     NavBarComponent,
     HomePageComponent,
+    CliComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
