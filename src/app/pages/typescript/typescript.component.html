@@ -1,8 +1,10 @@
 <h1>{{typescript.titulo}}</h1>
-<div *ngFor="let seccion of typescript.secciones" class="seccion">
-    <h2 class="subtitulo">{{seccion.subtitulo}}</h2>
-    <p class="texto">{{seccion.texto}}</p>
-    <ul *ngIf="seccion.herramientas">
-        <li *ngFor="let herramienta of seccion.herramientas">{{herramienta}}</li>
-    </ul>
+<div class="contenido">
+    <div *ngFor="let seccion of typescript.secciones" class="seccion">
+        <h2 class="subtitulo">{{seccion.subtitulo}}</h2>
+        <p class="texto">{{seccion.texto}}</p>
+        <ul *ngIf="seccion.herramientas">
+            <li *ngFor="let herramienta of seccion.herramientas">{{herramienta}}</li>
+        </ul>
+    </div>
 </div>

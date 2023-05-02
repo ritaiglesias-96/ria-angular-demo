@@ -6,6 +6,7 @@ button {
   @include typography-p;
   border-radius: 10px;
   margin: 5px;
+  color: $white;
 }
 
 .outline {
@@ -14,29 +15,32 @@ button {
 }
 
 .outline:hover {
-  color: $white;
-  background-color: $dustyBlue;
-  border-color: $dustyBlue;
+  color: $black;
+  background-color: $pink;
+  border-color: $redish;
   box-shadow: none;
 }
 
 .dark {
-  background-color: $dustyBlue;
+  background-color: $red;
   color: $white;
-  border: solid 2px $dustyBlue;
+  border: solid 2px $red;
 }
 
 .dark:hover {
   color: $black;
-  background-color: $white;
+  background-color: $pink;
+  border-color: $dustyWhite;
   box-shadow: none;
 }
 
 .light {
+  color: $black;
   background-color: $white;
   border: solid 2px $white;
 }
 
 .light:hover {
-  background-color: $dustyBlueLight;
+  color: $white;
+  background-color: $redish;
 }

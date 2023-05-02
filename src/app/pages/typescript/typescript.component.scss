@@ -1,0 +1,29 @@
+@import "./src/styles.scss";
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    .seccion {
+        border: 2px solid #a68a64;
+        padding: 20px;
+        flex: 1;
+        background-color: #c2c5aa;
+        border-radius: 10px;
+      }
+      
+}
+
+h1{
+  @include typography-h1;
+}
+
+p{
+  @include typography-p;
+}
+
+li{
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
