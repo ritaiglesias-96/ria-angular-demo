@@ -7,6 +7,7 @@ button {
   border-radius: 10px;
   margin: 5px;
   color: $white;
+  color: $white;
 }
 
 .outline {
@@ -18,12 +19,17 @@ button {
   color: $black;
   background-color: $pink;
   border-color: $redish;
+  color: $black;
+  background-color: $pink;
+  border-color: $redish;
   box-shadow: none;
 }
 
 .dark {
   background-color: $red;
+  background-color: $red;
   color: $white;
+  border: solid 2px $red;
   border: solid 2px $red;
 }
 
@@ -31,16 +37,21 @@ button {
   color: $black;
   background-color: $pink;
   border-color: $dustyWhite;
+  background-color: $pink;
+  border-color: $dustyWhite;
   box-shadow: none;
 }
 
 .light {
+  color: $black;
   color: $black;
   background-color: $white;
   border: solid 2px $white;
 }
 
 .light:hover {
+  color: $white;
+  background-color: $redish;
   color: $white;
   background-color: $redish;
 }
