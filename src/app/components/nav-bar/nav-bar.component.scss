@@ -45,6 +45,8 @@
 
     @include media-mobile() {
       padding: 10px;
+      overflow-x: scroll;
+      width: 40%;
     }
   }
 }
