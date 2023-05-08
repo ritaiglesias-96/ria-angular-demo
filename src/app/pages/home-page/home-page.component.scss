@@ -57,9 +57,24 @@
         color: $white;
       }
     }
-
     .carta:last-child {
       grid-column: 2;
+    }
+
+    @include media-tablet() {
+      grid-template-columns: repeat((2, 1fr));
+      width: 100%;
+      .carta:last-child {
+        grid-column: 1;
+      }
+    }
+
+    @include media-mobile() {
+      grid-template-columns: 1fr;
+      width: 100%;
+      .carta:last-child {
+        grid-column: 1;
+      }
     }
   }
 }
