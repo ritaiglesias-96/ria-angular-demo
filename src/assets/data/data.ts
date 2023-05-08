@@ -20,10 +20,16 @@ export const presentation = {
         theme: 'light',
       },
       {
+        link: '/directivas',
+        text: 'Directivas',
+        theme: 'dark',
+      },
+      {
         link: '/scss',
         text: 'SCSS',
         theme: 'outline',
       },
+      
     ] as Button[],
   },
   home: {
@@ -87,4 +93,22 @@ export const presentation = {
     },
     ]
   },
+  directivas:{
+    titulo: 'Directivas de angular',
+    introduccion : 'Las Directivas extienden la funcionalidad del HTML usando para ello una nueva sintaxis. Con ella podemos usar lógica que será ejecutada en el DOM (Document Object Model). Cada Directiva que usamos tiene un nombre, y determina donde puede ser usada, sea en un elemento, atributo, componente o clase. ',
+    secciones: [{
+      subtitulo: 'Directivas de Atributo ',
+      texto: 'Responsables de manipular la apariencia y el comportamiento de los elementos DOM. también se usan para ocultar o mostrar condicionalmente elementos DOM particulares. Angular proporciona muchas directivas de atributos integradas como NgStyle, NgClass. ',
+    },
+    {
+      subtitulo: 'Directivas Estructurales',
+      texto: 'Encargadas de cambiar la estructura del DOM. Funcionan agregando o eliminando elementos del DOM, a diferencia de las directivas de atributos, que solo cambian la apariencia y el comportamiento del elemento. El nombre de la Directiva estructural siempre comienza con un prefijo de asterisco (*), mientras que la Directiva de atributos no contiene ningún prefijo. Las tres directivas estructurales integradas más populares que proporciona Angular son NgIf, NgFor y NgSwitch.',
+    },
+    {
+      subtitulo: 'Componentes',
+      texto: 'Los componentes son directivas con plantillas. La única diferencia entre los Componentes y los otros dos tipos de directivas es la Plantilla. Las directivas estructurales y de atributos no tienen plantillas.',
+    },
+    ]
+
+  }
 };
