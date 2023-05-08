@@ -1,0 +1,10 @@
+<div class="sass-page">
+  <h1>{{ cssPreprocessors.titulo }}</h1>
+
+  <div class="grid-contenedor">
+    <div *ngFor="let carta of cssPreprocessors.cartas" class="carta">
+      <h2 class="titulo">{{ carta.titulo }}</h2>
+      <p class="contenido">{{ carta.texto }}</p>
+    </div>
+  </div>
+</div>

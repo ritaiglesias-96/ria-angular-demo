@@ -1,0 +1,11 @@
+<div class="ngmodules-page">
+  <h1>{{ ngmodulesData.titulo }}</h1>
+
+  <div class="grid-contenedor">
+    <div *ngFor="let carta of ngmodulesData.cartas" class="carta">
+      <h2 class="titulo">{{ carta.titulo }}</h2>
+      <p class="contenido">{{ carta.texto }}</p>
+    </div>
+    <img src="../../../assets/images/app-module-example.png" />
+  </div>
+</div>

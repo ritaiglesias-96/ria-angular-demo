@@ -1,0 +1,92 @@
+@import "./src/styles.scss";
+
+.ngmodules-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    @include typography-h1;
+    padding-bottom: 20px;
+    color: $blue3;
+  }
+
+  .grid-contenedor {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 90%;
+
+    .carta {
+      background-color: $blue1;
+      box-sizing: border-box;
+      border: 2px solid $blue2;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 15px;
+      width: -webkit-fill-available;
+      transition: scale 0.3s ease-in-out, background-color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+      .titulo {
+        @include typography-h4;
+        text-align: center;
+        color: $black;
+      }
+      .contenido {
+        @include typography-p;
+        list-style: circle;
+        color: $black;
+      }
+
+      li:only-of-type {
+        list-style: none;
+      }
+    }
+
+    .carta:hover {
+      scale: 1.1;
+      background-color: $redish;
+      border-color: $red;
+      .contenido,
+      .titulo {
+        color: $white;
+      }
+    }
+    .carta:last-child {
+      grid-column: 3;
+    }
+
+    img {
+      grid-column: span 2;
+      grid-row: span 2;
+      width: 100%;
+      @include media-mobile() {
+        grid-column: 1;
+      }
+      @include media-tablet() {
+        grid-column: span 2;
+      }
+    }
+
+    @include media-tablet() {
+      grid-template-columns: repeat((2, 1fr));
+      width: 100%;
+      .carta:last-child {
+        grid-column: 1;
+      }
+    }
+
+    @include media-mobile() {
+      grid-template-columns: 1fr;
+      width: 100%;
+      .carta:last-child {
+        grid-column: 1;
+      }
+    }
+  }
+}
