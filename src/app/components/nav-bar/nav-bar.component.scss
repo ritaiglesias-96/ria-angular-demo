@@ -45,8 +45,66 @@
 
     @include media-mobile() {
       padding: 10px;
-      overflow-x: scroll;
-      width: 40%;
+      display: none;
+    }
+  }
+
+  .menu-mobile {
+    display: none;
+    overflow: none;
+    z-index: 15;
+    width: 60%;
+  }
+
+  .active {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    z-index: 3;
+  }
+
+  .ham-menu {
+    height: 30px;
+    width: 30px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+
+    .line {
+      background-color: white;
+      border-radius: 1em;
+      width: 15px;
+      height: 0.25rem;
+    }
+
+    .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 100ms ease-in-out;
+    }
+
+    .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 100ms ease-in-out;
+    }
+  }
+
+  .open {
+    .line1 {
+      display: block;
+      transform: rotate(45deg);
+    }
+    .line2 {
+      opacity: 0;
+    }
+    .line3 {
+      display: block;
+      transform: rotate(-45deg);
     }
   }
 }

@@ -4,4 +4,3 @@ export interface Button {
   theme: 'dark' | 'light' | 'outline'
 }
 
-
