@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { TypescriptComponent } from './pages/typescript/typescript.component';
+import { CliComponent } from './pages/cli/cli.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { DirectivasComponent } from './pages/directivas/directivas.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     NavBarComponent,
     TypescriptComponent,
     HomePageComponent,
+    DirectivasComponent,
+    CliComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
