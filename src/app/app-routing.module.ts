@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TypescriptComponent } from './pages/typescript/typescript.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
-const routes: Routes = [{path:'typescript' , component: TypescriptComponent}{ path: '', component: HomePageComponent }];
+const routes: Routes = [{path:'typescript' , component: TypescriptComponent},{ path: '', component: HomePageComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

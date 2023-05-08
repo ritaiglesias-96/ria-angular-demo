@@ -71,7 +71,7 @@ export const presentation = {
   },
   typescript: {
     titulo: 'Typescript',
-    ecciones: [{
+    secciones: [{
       subtitulo: 'Introducción a Typescript',
       texto: 'TypeScript es un lenguaje de programación de código abierto desarrollado por Microsoft que se basa en JavaScript.Es un lenguaje de programación orientado a objetos que proporciona funciones adicionales para facilitar la escritura y el mantenimiento de código a gran escala. Typescript es un superset de JavaScript. Decimos que una tecnología es un superset de un lenguaje de programación, cuando puede ejecutar programas de la tecnología',
     },

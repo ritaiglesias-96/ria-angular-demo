@@ -10,4 +10,23 @@
   <div class="menu">
     <app-button *ngFor="let boton of botones" [props]="boton"></app-button>
   </div>
+  <div
+    class="ham-menu"
+    [ngClass]="isOpen ? 'open' : 'close'"
+    (click)="handleMenu()"
+  >
+    <span class="line line1"></span>
+    <span class="line line2"></span>
+    <span class="line line3"></span>
+  </div>
+
+  <div class="menu-mobile" [ngClass]="isOpen ? 'active' : 'inactive'">
+    <ul>
+      <li *ngFor="let boton of botones">
+        <a [routerLink]="[boton.link]" routerLinkActive="router-link-active">{{
+          boton.text
+        }}</a>
+      </li>
+    </ul>
+  </div>
 </nav>
