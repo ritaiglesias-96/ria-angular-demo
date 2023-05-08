@@ -8,4 +8,5 @@ import { presentation } from '../assets/data/data';
 })
 export class AppComponent {
   presentacion = presentation;
+
 }

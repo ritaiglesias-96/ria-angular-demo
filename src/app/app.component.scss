@@ -1,5 +1,27 @@
 @import "./src/styles.scss";
 
+
+.contenedor {
+  padding: 20px;
+  background-color: $dustyWhite;
+  height: 100%;
+  text-align: center;
+}
+
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
 .contenedor {
   padding: 20px;
   background: linear-gradient(118.65deg, $blue1 5.88%, $blue2 98.75%);

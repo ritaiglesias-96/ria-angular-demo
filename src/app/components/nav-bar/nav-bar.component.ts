@@ -9,4 +9,10 @@ import { Button } from 'src/assets/interfaces';
 export class NavBarComponent {
   @Input() titulo: string = '';
   @Input() botones: Button[] = [];
+
+  isOpen: Boolean = false;
+
+  handleMenu() {
+    this.isOpen = !this.isOpen;
+  }
 }
