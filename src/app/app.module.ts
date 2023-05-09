@@ -9,6 +9,8 @@ import { TypescriptComponent } from './pages/typescript/typescript.component';
 import { CliComponent } from './pages/cli/cli.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { DirectivasComponent } from './pages/directivas/directivas.component';
+import { CssPreprocessorsComponent } from './pages/css-preprocessors/css-preprocessors.component';
+import { NgmodulesComponent } from './pages/ngmodules/ngmodules.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { DirectivasComponent } from './pages/directivas/directivas.component';
     HomePageComponent,
     DirectivasComponent,
     CliComponent,
+    CssPreprocessorsComponent,
+    NgmodulesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -16,6 +16,12 @@ $desktop: 1024px;
   }
 }
 
+@mixin media-desktop() {
+  @media (min-width: ($desktop)) {
+    @content;
+  }
+}
+
 /***************************** TYPOGRAPHY *********************************/
 
 @mixin typography-h1() {
@@ -94,6 +100,7 @@ $blue2: #336683;
 $blue3: #003049;
 
 /********************************************************/
+
 html,
 body {
   height: 100%;
